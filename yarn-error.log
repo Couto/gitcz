@@ -1,0 +1,63 @@
+Arguments: 
+  /Users/couto/.asdf/installs/nodejs/13.2.0/bin/node /Users/couto/.asdf/installs/yarn/1.21.1/bin/yarn.js commit
+
+PATH: 
+  /Users/couto/.asdf/installs/nodejs/13.2.0/bin:/Users/couto/.asdf/installs/nodejs/13.2.0/.npm/bin:/Users/couto/.asdf/installs/yarn/1.21.1/bin:/Users/couto/.asdf/shims:/usr/local/opt/asdf/bin:/Users/couto/.bin:/usr/local/opt/curl/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/opt:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/couto/.fzf/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  13.2.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /private/tmp/gitcz/package.json: Unexpected token { in JSON at position 602
+      at JSON.parse (<anonymous>)
+      at /Users/couto/.asdf/installs/yarn/1.21.1/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/couto/.asdf/installs/yarn/1.21.1/lib/cli.js:310:30)
+      at /Users/couto/.asdf/installs/yarn/1.21.1/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "gitcz",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@commitlint/cli": "^8.3.5",
+      "@commitlint/config-conventional": "^8.3.4",
+      "commitizen": "^4.0.3",
+      "cz-conventional-changelog": "^3.1.0",
+      "husky": "^4.2.1"
+    },
+    "husky": {
+      "hooks": {
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      }
+    },
+    "config": {
+      "commitizen": {
+        "path": "cz-conventional-changelog"
+      }
+    },
+    {
+      "scripts": {
+      "commit": "git-cz"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
