@@ -27,6 +27,7 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "private": true,
   "repository": {
     "url": "https://github.com/Couto/gitcz.git"
   },
